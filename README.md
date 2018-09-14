@@ -18,3 +18,5 @@ module.exports = {
 ```
 
 - 编写 config 文件相关 sql 信息
+
+- 使用 koa-generator

@@ -1,4 +1,7 @@
 {
+  "scripts": {
+    "start": "node app"
+  },
   "dependencies": {
     "koa": "^2.5.3",
     "mysql2": "^1.6.1",
