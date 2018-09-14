@@ -1,8 +1,11 @@
-# sequelize、KOA 搭建 Node环境
+# sequelize、KOA 搭建 Node 环境
 
-- 安装sequelize，sequelize-cli，KOA
+- 安装 sequelize，sequelize-cli，KOA
+
+- 新建 index.js 文件搭建 Koa
 
 - 建立.sequelizerc 文件进行相关配置(touch .sequelizerc)
+
 ```
 const path = require('path')
 
@@ -13,3 +16,5 @@ module.exports = {
     'seeders-path': path.resolve('./app','seeders'),
 }
 ```
+
+- 编写 config 文件相关 sql 信息
