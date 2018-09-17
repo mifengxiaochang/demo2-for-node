@@ -86,5 +86,5 @@ router.get("/", homeController.welcome);
 1. 解析上下文 ctx 中的原生 node.js 对象 req。
 2. 将 POST 表单数据解析成 query string 字符串.(例如:user=buppt&age=24)
 3. 将字符串转换成 JSON 格式。
-
-- 在 middlewares 文件夹中配置了常用 response 返回值
+[简单demo例子](./demo5.js)
+- 在 middlewares 文件夹中配置了常用 response 返回值[middlewares](./app/middlewares)
