@@ -1,4 +1,4 @@
-# sequelize、KOA 搭建 Node 环境
+# sequelize、KOA 搭建 Node 服务器环境
 
 - 安装 sequelize，sequelize-cli，KOA
 
@@ -76,8 +76,6 @@ router.get("/", homeController.welcome);
 请求对象 ctx.query，返回如 { a:1, b:2 }
 请求字符串 ctx.querystring，返回如 a=1&b=2
 
--
-
 2. 是从上下文的 request 对象中获取
 
 请求对象 ctx.request.query，返回如 { a:1, b:2 }
@@ -89,4 +87,4 @@ router.get("/", homeController.welcome);
 2. 将 POST 表单数据解析成 query string 字符串.(例如:user=buppt&age=24)
 3. 将字符串转换成 JSON 格式。
 
-在 middlewares 文件夹中配置了常用 response 返回值
+- 在 middlewares 文件夹中配置了常用 response 返回值
