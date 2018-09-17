@@ -59,10 +59,9 @@ app.use(orm.middleware);
 
 - 建立多层路由
 
-[简单路由demo例子](./demo5.js)
+[简单路由 demo 例子](./demo5.js)
 
 ```
-
 const Router = require("koa-router");
 const router = new Router();
 
@@ -70,7 +69,7 @@ const router = new Router();
 router.get("/", homeController.welcome);
 ```
 
-- 获取请求参数
+- 获取请求参数（中间件）
 
 在 koa 中，获取 GET 请求数据源头是 koa 中 request 对象中的 query 方法或 querystring 方法，query 返回是格式化好的参数对象，querystring 返回的是请求字符串，由于 ctx 对 request 的 API 有直接引用的方式，所以获取 GET 请求数据有两个途径。
 
@@ -84,11 +83,9 @@ router.get("/", homeController.welcome);
 请求对象 ctx.request.query，返回如 { a:1, b:2 }
 请求字符串 ctx.request.querystring，返回如 a=1&b=2
 
-对于 POST 请求的处理，koa2 没有封装获取参数的方法。所以获取 Post 请求需要以下步骤：
+对于 POST 请求的处理，koa2 没有封装获取参数的方法。
 
-1. 解析上下文 ctx 中的原生 node.js 对象 req。
-2. 将 POST 表单数据解析成 query string 字符串.(例如:user=buppt&age=24)
-3. 将字符串转换成 JSON 格式。
+koa-bodyparser 中间件可以把 koa2 上下文的 formData 数据解析到 ctx.request.body 中。
 
 - 在 middlewares 文件夹中配置了常用 response 返回值
-    [详细配置内容](./app/middlewares)
+  [详细配置内容](./app/middlewares)
