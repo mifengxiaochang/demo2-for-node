@@ -1,6 +1,8 @@
-# sequelize、KOA 搭建 Node 服务器环境
+﻿# sequelize、KOA 搭建 Node 服务器环境
 
 - 安装 sequelize，sequelize-cli，KOA
+
+- npm init输入项目信息
 
 - 新建 index.js 文件搭建 Koa
 
@@ -89,3 +91,4 @@ koa-bodyparser 中间件可以把 koa2 上下文的 formData 数据解析到 ctx
 
 - 在 middlewares 文件夹中配置了常用 response 返回值
   [详细配置内容](./app/middlewares)
+
