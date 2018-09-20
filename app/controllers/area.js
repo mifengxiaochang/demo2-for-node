@@ -1,9 +1,9 @@
 "use strict";
 module.exports = {
-  //获取平滑数据
+  //获取数据
   getAreaInfo: async ctx => {
     console.log("-------area----------");
-
+    const { Area } = ctx.orm();
     if (!Area) {
       ctx.res.fail(4004, "no data");
       return;
