@@ -19,6 +19,10 @@ module.exports = {
 }
 ```
 
+- 执行 sequelize init 命令
+
+node_modules/.bin/sequelize init
+
 - 编写 config 文件相关 sql 信息
 
 ```
